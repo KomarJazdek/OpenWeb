@@ -11,9 +11,16 @@ first = "<html> <head>"
 title1 = "<title>"
 title2 = "</title>"
 body = "</head> <body>"
+script = ""
+style = ""
+scndchoice = input("The default background is in white color.Do you want to change color(1)?If not, press any other char")
+
+if scndchoice == "1":
+ color = input("Color:")
+ style = "<style> body {background-color:"+color+";} </style>"
 
 
-step1 = first+title1+title+title2+body
+step1 = first+title1+title+title2+body+style
 wrt.write(step1)
 
 fontsize = input("Type size of a font(1 is the biggest)")
