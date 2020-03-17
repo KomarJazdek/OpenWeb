@@ -23,7 +23,7 @@ if scndchoice == "1":
 step1 = first+title1+title+title2+body+style
 wrt.write(step1)
 
-fontsize = input("Type size of a font(1 is the biggest)")
+fontsize = input("Type size of a font(1 is the biggest,6-the smallest)")
 
 try:
  while True:
