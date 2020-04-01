@@ -1,4 +1,3 @@
-#Pre-alpha of Open Web
 #Open Source webpage creator
 
 wrt = open('index.html','w')
@@ -13,6 +12,19 @@ title2 = "</title>"
 body = "</head> <body>"
 script = ""
 style = ""
+
+nnc = input("Do you want to add a logo?(y/n)")
+
+if nnc == "y":
+ nnc2 = input("URL/path:")
+ width = input("Width:")
+ height = input("Height:")
+ align = input("Align(center/right/left):")
+
+
+img = "<img src=\""+nnc2+"\" width=\""+width+"\" height=\""+height+"\" align=\""+align+"\""
+
+
 scndchoice = input("The default background is in white color.Do you want to change color(1)?If not, press any other char")
 
 if scndchoice == "1":
@@ -20,7 +32,7 @@ if scndchoice == "1":
  style = "<style> body {background-color:"+color+";} </style>"
 
 
-step1 = first+title1+title+title2+body+style
+step1 = first+title1+title+title2+body+style+img
 wrt.write(step1)
 
 fontsize = input("Type size of a font(1 is the biggest,6-the smallest)")
