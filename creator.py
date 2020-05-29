@@ -66,7 +66,7 @@ finally:
    moreimg2 += "\" height=\""+img_height+"\">"
    wrt.write(moreimg2)
   else:
-   print("Ok, no photos!")
+   print("Ok, no photos! :)")
    
 step2 = "</body> </html>"
 wrt.write(step2)
