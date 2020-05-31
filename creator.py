@@ -24,11 +24,11 @@ if nnc == "y":
  img = "<img src=\""+nnc2+"\" width=\""+width+"\" height=\""+height+"> <br>"
 else:
  img = ""
-indextitle = input("Title to be showed on the center of this page")
+indextitle = input("Title to be showed on the center of this page:")
 
 title31 = "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b id=\"title\">"+indextitle+"</b> "
 
-scndchoice = input("The default background is in white color.Do you want to change color(1)?If not, press any other char")
+scndchoice = input("The default background is in white color.Do you want to change color(1)?If not, press any other char:")
 
 if scndchoice == "1":
  color = input("Color:")
@@ -66,7 +66,7 @@ finally:
    moreimg2 += "\" height=\""+img_height+"\">"
    wrt.write(moreimg2)
   else:
-   print("Ok, no photos! :)")
+   print("Ok, no photos!")
    
 step2 = "</body> </html>"
 wrt.write(step2)
